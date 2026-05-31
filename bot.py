@@ -39,8 +39,8 @@ class VoiceBot(discord.Client):
                 return
 
             self.voice_client = await channel.connect(
-                self_deaf=True,
-                self_mute=True
+                self_deaf=False,
+                self_mute=False
             )
 
             print(f"🔊 {self.user} joined {channel.name}")
